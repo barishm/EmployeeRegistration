@@ -57,6 +57,7 @@ public class Employee {
                 empname = txtName.getText();
                 salary = txtSalary.getText();
                 mobile = txtMobile.getText();
+
                 try {
                     pst = con.prepareStatement("insert into employee(empname,salary,mobile)values(?,?,?)");
                     pst.setString(1, empname);
